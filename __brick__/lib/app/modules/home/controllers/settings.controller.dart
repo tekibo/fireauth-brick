@@ -1,4 +1,4 @@
-import 'package:firetest/auth/auth.controller.dart';
+import 'package:{{appName}}/auth/auth.controller.dart';
 import 'package:get/get.dart';
 
 class SettingsController extends GetxController {

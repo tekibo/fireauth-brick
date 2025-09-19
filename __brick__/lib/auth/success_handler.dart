@@ -1,4 +1,4 @@
-import 'package:firetest/utils/shared/helpers/helpers.dart';
+import 'package:{{appName}}/utils/shared/helpers/helpers.dart';
 
 enum SuccessType {
   emailVerificationSent,

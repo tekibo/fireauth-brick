@@ -1,14 +1,14 @@
-import 'package:firetest/auth/auth.controller.dart';
-import 'package:firetest/auth/credential_manager_service.dart';
-import 'package:firetest/auth/google_sign_in.dart';
-import 'package:firetest/app/routes/app_pages.dart';
+import 'package:{{appName}}/auth/auth.controller.dart';
+import 'package:{{appName}}/auth/credential_manager_service.dart';
+import 'package:{{appName}}/auth/google_sign_in.dart';
+import 'package:{{appName}}/app/routes/app_pages.dart';
 import 'package:hive_ce_flutter/adapters.dart';
 import 'firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:get/get.dart';
-import 'package:firetest/app/modules/login/login.controller.dart';
+import 'package:{{appName}}/app/modules/login/login.controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

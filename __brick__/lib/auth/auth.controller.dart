@@ -1,10 +1,10 @@
-import 'package:firetest/auth/credential_manager_service.dart';
-import 'package:firetest/auth/error_handler.dart';
-import 'package:firetest/app/modules/login/widgets/prompt_for_password.dart';
-import 'package:firetest/app/routes/app_pages.dart';
-import 'package:firetest/auth/google_sign_in.dart';
-import 'package:firetest/auth/success_handler.dart';
-import 'package:firetest/utils/utils.dart';
+import 'package:{{appName}}/auth/credential_manager_service.dart';
+import 'package:{{appName}}/auth/error_handler.dart';
+import 'package:{{appName}}/app/modules/login/widgets/prompt_for_password.dart';
+import 'package:{{appName}}/app/routes/app_pages.dart';
+import 'package:{{appName}}/auth/google_sign_in.dart';
+import 'package:{{appName}}/auth/success_handler.dart';
+import 'package:{{appName}}/utils/utils.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

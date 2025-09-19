@@ -1,6 +1,6 @@
-import 'package:firetest/app/modules/home/controllers/dashboard.controller.dart';
-import 'package:firetest/app/modules/home/controllers/settings.controller.dart';
-import 'package:firetest/app/modules/home/home.navigator.dart';
+import 'package:{{appName}}/app/modules/home/controllers/dashboard.controller.dart';
+import 'package:{{appName}}/app/modules/home/controllers/settings.controller.dart';
+import 'package:{{appName}}/app/modules/home/home.navigator.dart';
 import 'package:get/get.dart';
 
 class HomeBindings extends Bindings {

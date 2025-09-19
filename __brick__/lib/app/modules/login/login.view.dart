@@ -1,8 +1,8 @@
-import 'package:firetest/app/modules/login/widgets/forgot_password.dart';
-import 'package:firetest/utils/utils.dart';
+import 'package:{{appName}}/app/modules/login/widgets/forgot_password.dart';
+import 'package:{{appName}}/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:firetest/app/modules/login/login.controller.dart';
+import 'package:{{appName}}/app/modules/login/login.controller.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginView extends GetView<LoginController> {

@@ -29,5 +29,13 @@ vars:
   appName:
     type: string
     description: App name
-    default: FireAuth
     prompt: What is your app name?
+  googleClientId:
+    type: string
+    description: Google client ID
+    prompt: What is your google client ID?
+  useCredentialManager:
+    type: boolean
+    description: Use credential manager
+    default: false
+    prompt: Use credential manager for google sign in?

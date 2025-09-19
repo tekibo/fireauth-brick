@@ -15,10 +15,8 @@ class GoogleSignInService extends GetxService {
   void onInit() {
     super.onInit();
     signIn.initialize(
-      clientId:
-          '302303927717-i4sf3s6rtisjvk2amese2hss08v8i6il.apps.googleusercontent.com',
-      serverClientId:
-          '302303927717-i4sf3s6rtisjvk2amese2hss08v8i6il.apps.googleusercontent.com',
+      clientId: '{{googleClientId}}',
+      serverClientId: '{{googleServerClientId}}',
     );
   }
 

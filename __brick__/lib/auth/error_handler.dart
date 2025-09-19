@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firetest/auth/auth.controller.dart';
-import 'package:firetest/utils/shared/helpers/snackbar.dart';
+import 'package:{{appName}}/auth/auth.controller.dart';
+import 'package:{{appName}}/utils/shared/helpers/snackbar.dart';
 import 'package:get/get.dart';
 
 class ErrorHandler {

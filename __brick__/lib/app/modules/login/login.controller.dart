@@ -1,6 +1,6 @@
-import 'package:firetest/auth/auth.controller.dart';
-import 'package:firetest/app/routes/app_pages.dart';
-import 'package:firetest/auth/google_sign_in.dart';
+import 'package:{{appName}}/auth/auth.controller.dart';
+import 'package:{{appName}}/app/routes/app_pages.dart';
+import 'package:{{appName}}/auth/google_sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -13,8 +13,7 @@ class CredentialManagerService extends GetxService {
     if (credentialManager.isSupportedPlatform) {
       await credentialManager.init(
         preferImmediatelyAvailableCredentials: true,
-        googleClientId:
-            '302303927717-i4sf3s6rtisjvk2amese2hss08v8i6il.apps.googleusercontent.com',
+        googleClientId: '{{googleClientId}}',
       );
     }
   }
