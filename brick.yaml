@@ -34,8 +34,12 @@ vars:
     type: string
     description: Google client ID
     prompt: What is your google client ID?
-  useCredentialManager:
+  useCredMgr:
     type: boolean
-    description: Use credential manager
-    default: false
+    description: Use credential manager for google sign in
     prompt: Use credential manager for google sign in?
+    default: true
+  scopes:
+    type: array
+    description: List of scopes for google sign in
+    prompt: List of scopes for google sign in
