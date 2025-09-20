@@ -9,7 +9,7 @@ class GoogleSignInService extends GetxService {
 
   bool get supportsAuth => GoogleSignIn.instance.supportsAuthenticate();
 
-  List<String> scopes = {{scopes}};
+  List<String> scopes = ['https://www.googleapis.com/auth/drive.file'];
 
   @override
   void onInit() {
