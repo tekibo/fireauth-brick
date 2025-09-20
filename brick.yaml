@@ -39,3 +39,7 @@ vars:
     description: Use credential manager for google sign in
     prompt: Use credential manager for google sign in?
     default: true
+  scopes:
+    type: string
+    description: List of scopes for google sign in
+    prompt: List of scopes for google sign in
