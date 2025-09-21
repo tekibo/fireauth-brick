@@ -1,4 +1,3 @@
 export 'shared/widgets/widgets.dart';
 export 'shared/helpers/helpers.dart';
 export 'shared/styles/styles.dart';
-export 'shared/helpers/helpers.dart';
