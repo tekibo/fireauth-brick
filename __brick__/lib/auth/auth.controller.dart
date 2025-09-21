@@ -2,7 +2,7 @@ import 'package:{{appName.snakeCase()}}/auth/credential_manager_service.dart';
 import 'package:{{appName.snakeCase()}}/auth/error_handler.dart';
 import 'package:{{appName.snakeCase()}}/app/modules/login/widgets/prompt_for_password.dart';
 import 'package:{{appName.snakeCase()}}/app/routes/app_pages.dart';
-import 'package:{{appName.snakeCase()}}/auth/google_sign_in.dart';
+{{^useCredMgr}}import 'package:{{appName.snakeCase()}}/auth/google_sign_in.dart';{{/useCredMgr}}
 import 'package:{{appName.snakeCase()}}/auth/success_handler.dart';
 import 'package:{{appName.snakeCase()}}/utils/utils.dart';
 import 'package:get/get.dart';
