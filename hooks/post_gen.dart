@@ -12,7 +12,7 @@ Future<void> run(HookContext context) async {
     packages.add('google_sign_in');
   }
 
-  await Process.run('flutter', ['pub', 'add', packages.join(' ')]);
+  await Process.run('flutter', ['pub', 'add', ...packages]);
 
   progress.complete();
 }
