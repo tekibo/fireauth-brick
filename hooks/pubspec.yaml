@@ -1,0 +1,7 @@
+name: fireauth_hooks
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  mason: any
