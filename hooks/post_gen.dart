@@ -6,7 +6,7 @@ Future<void> run(HookContext context) async {
 
   final packages = ['firebase_auth'];
 
-  if (context.vars['useCredMgr'] == 'true') {
+  if (context.vars['useCredMgr'] == true) {
     packages.add('credential_manager');
   } else {
     packages.add('google_sign_in');
