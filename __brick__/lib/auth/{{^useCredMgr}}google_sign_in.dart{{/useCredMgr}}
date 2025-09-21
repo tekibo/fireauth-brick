@@ -20,16 +20,6 @@ class GoogleSignInService extends GetxService {
     );
   }
 
-  Future<OAuthCredential?> signInWithGoogle() async {
-    final user = await signIn.authenticate();
-    final googleAuthTokens = user.authentication;
-
-    final OAuthCredential credential = GoogleAuthProvider.credential(
-      idToken: googleAuthTokens.idToken,
-    );
-    return credential;
-  }
-
   Future<OAuthCredential?> signInWithGoogleWithScopes({
     bool isMandatory = true,
   }) async {
@@ -44,17 +34,8 @@ class GoogleSignInService extends GetxService {
       );
 
       return credential;
-    } catch (e) {
-      if (e.toString().contains('Cancelled by user') || !isMandatory) {
-        final googleAuthTokens = user.authentication;
-
-        final OAuthCredential credential = GoogleAuthProvider.credential(
-          idToken: googleAuthTokens.idToken,
-        );
-
-        return credential;
-      }
-      log('Google Sign-In failed: $e');
+    } catch (_) {
+      log('Google Sign-In failed');
       return null;
     }
   }

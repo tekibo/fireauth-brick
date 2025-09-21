@@ -26,7 +26,7 @@ class LoginController extends GetxController {
   }
 
   void onSignInWithGoogle() async {
-    final success = await authController.signInWithGoogle(withScopes: true);
+    final success = await authController.signInWithGoogle();
     if (success) {
       Get.offAllNamed(Routes.HOME);
     }

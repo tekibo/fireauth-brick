@@ -64,19 +64,20 @@ class AuthController extends GetxController {
   // Google Sign In
   // ----------------------------
 
-  Future<bool> signInWithGoogle({bool withScopes = false}) async {
+  {{^useCredMgr}}
+  Future<bool> signInWithGoogle() async {
     if (googleAuth.supportsAuth) {
-      final credential = withScopes
-          ? await googleAuth.signInWithGoogleWithScopes()
-          : await googleAuth.signInWithGoogle();
+      final credential = await googleAuth.signInWithGoogleWithScopes();
       if (credential == null) return false;
       await _auth.signInWithCredential(credential);
       return true;
     }
     return false;
   }
+  {{/useCredMgr}}
 
-  Future<bool> signInWithGoogleCredManager() async {
+  {{#useCredMgr}}
+  Future<bool> signInWithGoogle() async {
     try {
       final googleAuthCredential = await credentialManager.signInWithGoogle();
       if (googleAuthCredential == null) return false;
@@ -87,7 +88,8 @@ class AuthController extends GetxController {
       return false;
     }
   }
-
+  {{/useCredMgr}}
+  
   // ----------------------------
   // Sign Out
   // ----------------------------
