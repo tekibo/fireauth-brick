@@ -77,9 +77,9 @@ class AuthController extends GetxController {
   {{/useCredMgr}}
 
   {{#useCredMgr}}
-  Future<bool> signInWithGoogle() async {
+  Future<bool> signInWithGoogle({bool useButtonFlow = true}) async {
     try {
-      final googleAuthCredential = await credentialManager.signInWithGoogle();
+      final googleAuthCredential = await credentialManager.signInWithGoogle(useButtonFlow: useButtonFlow);
       if (googleAuthCredential == null) return false;
       await _auth.signInWithCredential(googleAuthCredential);
       return true;

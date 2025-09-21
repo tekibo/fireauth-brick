@@ -1,7 +1,7 @@
 {{#useCredMgr}}import 'package:firebase_auth/firebase_auth.dart';{{/useCredMgr}}
 import 'package:{{appName.snakeCase()}}/auth/auth.controller.dart';
 import 'package:{{appName.snakeCase()}}/app/routes/app_pages.dart';
-import 'package:{{appName.snakeCase()}}/auth/google_sign_in.dart';
+{{^useCredMgr}}import 'package:{{appName.snakeCase()}}/auth/google_sign_in.dart';{{/useCredMgr}}
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +12,7 @@ class LoginController extends GetxController {
   final confirmPassword = TextEditingController();
   final formKey = GlobalKey<FormState>();
   final authController = Get.find<AuthController>();
-  final googleAuth = Get.find<GoogleSignInService>();
+  {{^useCredMgr}}final googleAuth = Get.find<GoogleSignInService>();{{/useCredMgr}}
 
   {{#useCredMgr}}
   @override
