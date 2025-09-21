@@ -1,5 +1,7 @@
 import 'package:mason/mason.dart';
 
 void run(HookContext context) {
-  context.vars['scopes'].forEach((scope) => scope.replaceAll('^&#x2F;', '/'));
+  final scopes = context.vars['scopes'];
+  scopes.forEach((scope) => scope.toString().replaceAll('^&#x2F;', '/'));
+  context.vars['scopes'] = scopes;
 }
