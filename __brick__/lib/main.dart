@@ -1,6 +1,6 @@
 import 'package:{{appName.snakeCase()}}/auth/auth.controller.dart';
 import 'package:{{appName.snakeCase()}}/auth/credential_manager_service.dart';
-import 'package:{{appName.snakeCase()}}/auth/google_sign_in.dart';
+{{^useCredMgr}}import 'package:{{appName.snakeCase()}}/auth/google_sign_in.dart';{{/useCredMgr}}
 import 'package:{{appName.snakeCase()}}/app/routes/app_pages.dart';
 import 'package:{{appName.snakeCase()}}/app/modules/login/login.controller.dart';
 import 'package:hive_ce_flutter/adapters.dart';
@@ -18,7 +18,7 @@ void main() async {
   await Hive.openBox('storage');
 
   Get.put(CredentialManagerService(), permanent: true);
-  Get.put(GoogleSignInService(), permanent: true);
+  {{^useCredMgr}}Get.put(GoogleSignInService(), permanent: true);{{/useCredMgr}}
   Get.put(AuthController(), permanent: true);
   Get.put(LoginController(), permanent: true);
 
