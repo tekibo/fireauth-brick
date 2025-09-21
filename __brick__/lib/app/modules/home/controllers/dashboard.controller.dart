@@ -1,4 +1,4 @@
-import 'package:{{appName}}/auth/auth.controller.dart';
+import 'package:{{appName.snakeCase()}}/auth/auth.controller.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

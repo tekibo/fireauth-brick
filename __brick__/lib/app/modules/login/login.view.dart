@@ -21,7 +21,7 @@ class LoginView extends GetView<LoginController> {
             spacing: 16,
             children: [
               Text(
-                "Welcome to {{appName}}",
+                "Welcome to {{appName.snakeCase()}}",
                 style: Get.textTheme.titleLarge,
               ).paddingOnly(bottom: 24),
               Text(

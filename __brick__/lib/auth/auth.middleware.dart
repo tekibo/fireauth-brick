@@ -1,5 +1,5 @@
-import 'package:{{appName}}/app/routes/app_pages.dart';
-import 'package:{{appName}}/auth/auth.controller.dart';
+import 'package:{{appName.snakeCase()}}/app/routes/app_pages.dart';
+import 'package:{{appName.snakeCase()}}/auth/auth.controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';

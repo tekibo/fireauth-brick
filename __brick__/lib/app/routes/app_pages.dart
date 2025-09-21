@@ -1,7 +1,7 @@
-import 'package:{{appName}}/auth/auth.middleware.dart';
-import 'package:{{appName}}/app/modules/home/bindings/home.bindings.dart';
-import 'package:{{appName}}/app/modules/home/home.navigator.dart';
-import 'package:{{appName}}/app/modules/login/login.view.dart';
+import 'package:{{appName.snakeCase()}}/auth/auth.middleware.dart';
+import 'package:{{appName.snakeCase()}}/app/modules/home/bindings/home.bindings.dart';
+import 'package:{{appName.snakeCase()}}/app/modules/home/home.navigator.dart';
+import 'package:{{appName.snakeCase()}}/app/modules/login/login.view.dart';
 import 'package:get/get.dart';
 
 part 'app_routes.dart';

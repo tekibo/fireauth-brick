@@ -1,4 +1,4 @@
-import 'package:{{appName}}/utils/shared/helpers/helpers.dart';
+import 'package:{{appName.snakeCase()}}/utils/utils.dart';
 
 enum SuccessType {
   emailVerificationSent,

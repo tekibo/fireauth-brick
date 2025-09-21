@@ -1,5 +1,5 @@
-import 'package:{{appName}}/auth/auth.controller.dart';
-import 'package:{{appName}}/utils/shared/widgets/widgets.dart';
+import 'package:{{appName.snakeCase()}}/auth/auth.controller.dart';
+import 'package:{{appName.snakeCase()}}/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:get/get.dart';

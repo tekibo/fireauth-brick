@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:{{appName}}/app/modules/home/views/dashboard_view.dart';
-import 'package:{{appName}}/app/modules/home/views/settings_view.dart';
+import 'package:{{appName.snakeCase()}}/app/modules/home/views/dashboard_view.dart';
+import 'package:{{appName.snakeCase()}}/app/modules/home/views/settings_view.dart';
 
 class HomeNavController extends GetxController {
   final currentIndex = 0.obs;
