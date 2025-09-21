@@ -40,6 +40,6 @@ vars:
     prompt: Use credential manager for google sign in?
     default: true
   scopes:
-    type: string
+    type: array
     description: List of scopes for google sign in
     prompt: List of scopes for google sign in
