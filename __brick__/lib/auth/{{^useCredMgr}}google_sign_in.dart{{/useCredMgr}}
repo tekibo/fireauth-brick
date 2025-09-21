@@ -9,7 +9,7 @@ class GoogleSignInService extends GetxService {
 
   bool get supportsAuth => GoogleSignIn.instance.supportsAuthenticate();
 
-  List<String> scopes = {{scopes}};
+  List<String> scopes = [{{scopes}}];
 
   @override
   void onInit() {
