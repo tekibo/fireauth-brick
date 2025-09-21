@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+{{#useCredMgr}}import 'package:firebase_auth/firebase_auth.dart';{{/useCredMgr}}
 import 'package:{{appName.snakeCase()}}/auth/auth.controller.dart';
 import 'package:{{appName.snakeCase()}}/app/routes/app_pages.dart';
 import 'package:{{appName.snakeCase()}}/auth/google_sign_in.dart';
