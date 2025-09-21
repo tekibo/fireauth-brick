@@ -13,7 +13,7 @@ class AuthController extends GetxController {
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final CredentialManagerService credentialManager = Get.find();
-  final googleAuth = Get.find<GoogleSignInService>();
+  {{^useCredMgr}}final googleAuth = Get.find<GoogleSignInService>();{{/useCredMgr}}
 
   final isLoading = true.obs;
 
