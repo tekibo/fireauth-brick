@@ -1,8 +1,8 @@
-import 'package:{{appName}}/app/modules/login/widgets/forgot_password.dart';
-import 'package:{{appName}}/utils/utils.dart';
+import 'package:{{appName.snakeCase()}}/app/modules/login/widgets/forgot_password.dart';
+import 'package:{{appName.snakeCase()}}/app/modules/login/login.controller.dart';
+import 'package:{{appName.snakeCase()}}/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:{{appName}}/app/modules/login/login.controller.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginView extends GetView<LoginController> {

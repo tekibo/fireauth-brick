@@ -18,10 +18,10 @@ class CredentialManagerService extends GetxService {
     }
   }
 
-  Future<OAuthCredential?> signInWithGoogle() async {
+  Future<OAuthCredential?> signInWithGoogle({bool useButtonFlow = true}) async {
     try {
       final GoogleIdTokenCredential? credential = await credentialManager
-          .saveGoogleCredential(useButtonFlow: false);
+          .saveGoogleCredential(useButtonFlow: useButtonFlow);
 
       if (credential == null) return null;
 
