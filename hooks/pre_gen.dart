@@ -1,7 +1,7 @@
 import 'package:mason/mason.dart';
 
 void run(HookContext context) {
-  List<String> scopes = context.vars['scopes'];
+  List<String> scopes = context.vars['scopes'] as List<String>;
   scopes.forEach((scope) => scope.replaceAll('^&#x2F;', '/'));
-  context.vars['scopes'] = scopes;
+  context.vars['scopes'] = scopes as List<dynamic>;
 }
