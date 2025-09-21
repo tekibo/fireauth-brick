@@ -4,7 +4,7 @@ void run(HookContext context) {
   final scopes = context.vars['scopes'];
   final newScopes = [];
   for (var scope in scopes) {
-    newScopes.add('${Uri.decodeComponent(scope)}');
+    newScopes.add('${scope}');
   }
   context.vars['scopes'] = newScopes;
 }
